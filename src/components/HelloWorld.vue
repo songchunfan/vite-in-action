@@ -5,8 +5,8 @@
     Edit <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
   <Message @close="handle">
-    <template v-slot:title>Hello World ecccc来了恭喜发财,hft大吉大利,今晚吃鸡</template>
-    <template v-slot:default>新增成功！tset ci/cd</template>
+    <template v-slot:title>Hello World 恭喜发财, 大吉大利,今晚吃鸡</template>
+    <template v-slot:default>新增成功！tset ci/cd heighi</template>
   </Message>
   <compts></compts>
 </template>
