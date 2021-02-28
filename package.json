@@ -1,0 +1,50 @@
+{
+  "name": "vue3-in-action-vite",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development vite",
+    "build": "vite build",
+    "lint": "eslint \"src/**/*.{js,vue}\"",
+    "test": "jest --runInBand"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged",
+    "pre-push": "npm run test"
+  },
+  "lint-staged": {
+    "*.{js,vue}": "eslint"
+  },
+  "dependencies": {
+    "mockjs": "^1.1.0",
+    "vue": "^3.0.4"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.10.4",
+    "@vue/compiler-sfc": "^3.0.4",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/test-utils": "^2.0.0-beta.9",
+    "autoprefixer": "^8.6.5",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.1.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-prettier": "^3.1.3",
+    "eslint-plugin-vue": "^7.6.0",
+    "jest": "^24.0.0",
+    "lint-staged": "^10.5.4",
+    "postcss": "^8.2.1",
+    "prettier": "^1.19.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "^3.9.7",
+    "vite": "^1.0.0-rc.13",
+    "vite-plugin-mock": "^1.0.9",
+    "vue-jest": "^5.0.0-alpha.3",
+    "yorkie": "^2.0.0"
+  },
+  "browserslists": [
+    "last 2 versions",
+    "not dead",
+    "> 0.2%"
+  ]
+}
